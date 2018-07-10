@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="590.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML_Controllers.OvrviewFXMLController">
+   <children>
+      <FontAwesomeIconView fill="#13ab0d" glyphName="CODE" layoutX="375.0" layoutY="380.0" size="200" text="" wrappingWidth="228.1904706954956" />
+      <Text fill="#13ae18" layoutX="348.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Under Process ....">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Text>
+      <Text fill="#09097c" layoutX="26.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Overview" wrappingWidth="270.0">
+         <font>
+            <Font name="Yu Gothic Regular" size="40.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

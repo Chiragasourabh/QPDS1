@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="590.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML_Controllers.HomeFXMLController">
+   <children>
+      <Text layoutX="70.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VISION">
+         <font>
+            <Font name="Century Schoolbook" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="#3f3b3b" layoutX="70.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To become a centre of quality and valuable knowledge resource &#10;to meet growing challenges in global perspective for society, &#10;industry and environment through excellence in multi-disciplinary engineering, &#10;management and technology research oriented education.">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#3f3b3b" layoutX="70.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Consistently producing graduates with right professional and ethical outlook &#10;with much desired level of competencies to perceive needs, analyze, design and &#10;innovate sustainable solutions through lifelong learning in the service of society by,&#10; *   Establishing and dynamically updating the State of Art Laboratories and Information &#10;      Resource centre for world class education and research.&#10;*    Disseminating and archiving knowledge through qualified and experienced scholars &#10;      using appropriate ICT and teaching methodologies.&#10;*    Collaborating with industry and society to bridge the curriculum gap in &#10;      chosen and related fields.">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="70.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MISSION">
+         <font>
+            <Font name="Century Schoolbook" size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="590.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML_Controllers.GenerateFXMLController">
+   <children>
+      <JFXTimePicker fx:id="jtoTime" layoutX="825.0" layoutY="190.0" onAction="#showToTime" prefHeight="32.0" prefWidth="115.0" />
+      <JFXTimePicker fx:id="jfromTime" layoutX="683.0" layoutY="190.0" onAction="#showFromTime" prefHeight="32.0" prefWidth="115.0" />
+      <JFXDatePicker fx:id="jexmDate" editable="false" layoutX="177.0" layoutY="190.0" onAction="#showDate" prefHeight="32.0" prefWidth="171.0" />
+      <Text fill="#15075b" layoutX="26.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject Code : ">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="#15075b" layoutX="537.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester : ">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="#15075b" layoutX="26.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Examination Month : ">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="#15075b" layoutX="537.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Academic Year : ">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="#15075b" layoutX="26.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam Date : ">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="#15075b" layoutX="537.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam Time : ">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="#15075b" layoutX="790.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" to ">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Text>
+      <TextField fx:id="subjectcode" layoutX="190.0" layoutY="71.0" onKeyReleased="#showBothSubjectNameAndSubjectCode" prefHeight="17.0" prefWidth="162.0" promptText="ex. 15CS34">
+         <font>
+            <Font name="Footlight MT Light" size="25.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="semester" layoutX="655.0" layoutY="71.0" onKeyReleased="#showSemester" prefHeight="46.0" prefWidth="162.0" promptText="ex. First">
+         <font>
+            <Font name="Footlight MT Light" size="25.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="month" layoutX="273.0" layoutY="130.0" onKeyReleased="#showMonth" prefHeight="46.0" prefWidth="162.0" promptText="ex. Dec/Jan">
+         <font>
+            <Font name="Footlight MT Light" size="25.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="year" layoutX="727.0" layoutY="131.0" onKeyReleased="#showYear" prefHeight="46.0" prefWidth="162.0" promptText="ex. 2017/18">
+         <font>
+            <Font name="Footlight MT Light" size="25.0" />
+         </font>
+      </TextField>
+      <Text fill="RED" layoutX="670.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* All the fields are Mandatory">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Text>
+      <Pane layoutX="50.0" layoutY="250.0" prefHeight="244.0" prefWidth="860.0" style="-fx-background-color: #ffffffff;">
+         <children>
+            <Text layoutX="314.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CBCS Scheme">
+               <font>
+                  <Font name="Book Antiqua" size="36.0" />
+               </font>
+            </Text>
+            <Text layoutX="30.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USN">
+               <font>
+                  <Font name="Bookman Old Style" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="subjectcodetext" layoutX="730.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT">
+               <font>
+                  <Font name="Bookman Old Style" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="headerOne" layoutX="19.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="814.3144645690918">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="headerTwo" layoutX="9.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="836.9811248779297">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="Date" layoutX="30.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="295.75424575805664">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text fx:id="Time" layoutX="30.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="325.0875778198242">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="680.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max Marks: 80" wrappingWidth="128.25000643730164">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="680.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duration : 3 hrs." wrappingWidth="139.22863394021988">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Text fill="#09097c" layoutX="26.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generate" wrappingWidth="270.0">
+         <font>
+            <Font name="Yu Gothic Regular" size="40.0" />
+         </font>
+      </Text>
+      <JFXCheckBox fx:id="checkBox" checkedColor="#0277bd" layoutX="79.0" layoutY="528.0" onAction="#ckeckBoxAction" text="I Accept" textFill="#1c1c1c">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXPasswordField fx:id="edSecretKey" layoutX="470.0" layoutY="521.0" prefHeight="39.0" prefWidth="218.0" unFocusColor="RED">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </JFXPasswordField>
+      <Text fill="#cd1f1f" layoutX="223.0" layoutY="554.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confidential Key : ">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="proceedButton" buttonType="RAISED" defaultButton="true" layoutX="705.0" layoutY="517.0" onAction="#generateMethod" prefHeight="39.0" prefWidth="172.0" style="-fx-background-color: #1c7886;" text="Proceed" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

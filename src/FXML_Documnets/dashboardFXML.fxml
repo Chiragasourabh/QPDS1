@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="dashboardPane" prefHeight="590.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML_Controllers.DashboardFXMLController">
+   <children>
+      <Text fill="#09097c" layoutX="26.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" wrappingWidth="270.0">
+         <font>
+            <Font name="Yu Gothic Regular" size="40.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btnSubject" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" layoutX="40.0" layoutY="100.0" onAction="#showSubjects" prefHeight="160.0" prefWidth="190.0" style="-fx-background-color: #e44717;" text="SUBJECTS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+         <graphic>
+            <Text fx:id="textSubjects" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+            </Text>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnQuestions" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" layoutX="270.0" layoutY="100.0" onAction="#showQuestions" prefHeight="160.0" prefWidth="190.0" style="-fx-background-color: #e44717;" text="QUESTIONS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+         <graphic>
+            <Text fx:id="textQuestions" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+            </Text>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnUsers" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" layoutX="500.0" layoutY="100.0" onAction="#showUsers" prefHeight="160.0" prefWidth="190.0" style="-fx-background-color: #e44717;" text="USERS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+         <graphic>
+            <Text fx:id="textUsers" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+            </Text>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnQPGenerated" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" layoutX="730.0" layoutY="100.0" onAction="#showSuperUsers" prefHeight="160.0" prefWidth="190.0" style="-fx-background-color: #e44717;" text="SU USERS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+         <graphic>
+            <Text fx:id="textQpgenn" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+            </Text>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

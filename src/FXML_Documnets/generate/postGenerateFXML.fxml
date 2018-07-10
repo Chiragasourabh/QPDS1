@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="590.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML_Controllers.generate.PostGenerateFXMLController">
+   <children>
+      <Text fill="#09097c" layoutX="36.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generating" wrappingWidth="270.0">
+         <font>
+            <Font name="Yu Gothic Regular" size="40.0" />
+         </font>
+      </Text>
+      <Pane layoutX="50.0" layoutY="100.0" prefHeight="244.0" prefWidth="860.0" style="-fx-background-color: #ffffffff;">
+         <children>
+            <Text layoutX="314.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CBCS Scheme">
+               <font>
+                  <Font name="Book Antiqua" size="36.0" />
+               </font>
+            </Text>
+            <Text layoutX="30.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USN">
+               <font>
+                  <Font name="Bookman Old Style" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="subjectcodetext" layoutX="730.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT">
+               <font>
+                  <Font name="Bookman Old Style" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="headerOne" layoutX="19.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="814.3144645690918">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="headerTwo" layoutX="9.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="836.9811248779297">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="Date" layoutX="30.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="295.75424575805664">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text fx:id="Time" layoutX="30.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="325.0875778198242">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="680.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max Marks: 80" wrappingWidth="128.25000643730164">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="680.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duration : 3 hrs." wrappingWidth="139.22863394021988">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <JFXProgressBar fx:id="progressBar" layoutX="50.0" layoutY="400.0" prefHeight="10.0" prefWidth="860.0" progress="0.0" />
+      <Text fx:id="percent" layoutX="456.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100 %">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <OctIconView fx:id="SuccessIcon" fill="#109028" glyphName="CHECK" layoutX="431.0" layoutY="542.0" size="120.0" wrappingWidth="96.00000500679016" />
+      <JFXSpinner fx:id="loadingSpinner" accessibleRole="SPINNER" layoutX="423.0" layoutY="445.0" nodeOrientation="RIGHT_TO_LEFT" radius="50.0" startingAngle="0.0" />
+   </children>
+</AnchorPane>

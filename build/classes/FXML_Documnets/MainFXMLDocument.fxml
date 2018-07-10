@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="650.0" prefWidth="1220.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML_Controllers.MainFXMLController">
+    <children>
+      <Pane layoutX="260.0" prefHeight="60.0" prefWidth="960.0">
+         <children>
+            <Text layoutX="48.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question Paper Delivery System  ( SVCE )">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Text>
+            <MaterialDesignIconView fx:id="closeButton" fill="RED" glyphName="CLOSE_CIRCLE_OUTLINE" layoutX="915.0" layoutY="40.0" onMouseClicked="#Close" size="25" />
+            <MaterialDesignIconView fill="#109c45" glyphName="MINUS_CIRCLE_OUTLINE" layoutX="880.0" layoutY="40.0" onMouseClicked="#Minimize" size="25" />
+            <FontAwesomeIconView fill="#d79825" glyphName="SIGN_OUT" layoutX="840.0" layoutY="40.0" onMouseClicked="#Logout" rotate="180.0" size="25" />
+         </children>
+      </Pane>
+      <AnchorPane fx:id="mainPagePane" layoutX="260.0" layoutY="60.0" prefHeight="590.0" prefWidth="960.0" />
+      <AnchorPane depthTest="DISABLE" prefHeight="650.0" prefWidth="260.0" style="-fx-background-color: #212121;">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Line endX="120.0" layoutX="130.0" layoutY="161.0" scaleY="0.2" scaleZ="0.0" startX="-120.0" stroke="WHITE" />
+            <JFXButton fx:id="homeButton" alignment="BASELINE_LEFT" layoutY="162.0" onAction="#showHome" prefHeight="50.0" prefWidth="260.0" text="HOME" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="HOME" size="32.0" wrappingWidth="50.0" />
+               </graphic>
+            </JFXButton>
+            <Line endX="120.0" layoutX="130.0" layoutY="212.0" scaleY="0.2" scaleZ="0.0" startX="-120.0" stroke="WHITE" />
+            <JFXButton fx:id="dashboardButton" alignment="BASELINE_LEFT" layoutY="213.0" onAction="#showDashboard" prefHeight="50.0" prefWidth="260.0" text="DASHBOARD" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="VIEW_DASHBOARD" size="32" wrappingWidth="50.0" />
+               </graphic>
+            </JFXButton>
+            <Line endX="120.0" layoutX="130.0" layoutY="263.0" scaleY="0.2" scaleZ="0.0" startX="-120.0" stroke="WHITE" />
+            <JFXButton fx:id="overviewButton" alignment="BASELINE_LEFT" layoutY="264.0" onAction="#showOvrview" prefHeight="50.0" prefWidth="260.0" text="OVERVIEW" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="EYE" size="32.0" wrappingWidth="50.0" />
+               </graphic>
+            </JFXButton>
+            <Line endX="120.0" layoutX="130.0" layoutY="314.0" scaleY="0.2" scaleZ="0.0" startX="-120.0" stroke="WHITE" />
+            <JFXButton fx:id="manageButton" alignment="BASELINE_LEFT" layoutY="315.0" onAction="#showManage" prefHeight="50.0" prefWidth="260.0" text="MANAGE" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="COGS" size="32" wrappingWidth="50.0" />
+               </graphic>
+            </JFXButton>
+            <Line endX="120.0" layoutX="130.0" layoutY="365.0" scaleY="0.2" scaleZ="0.0" startX="-120.0" stroke="WHITE" />
+            <JFXButton fx:id="generateButton" alignment="BASELINE_LEFT" layoutY="366.0" onAction="#showGenerate" prefHeight="50.0" prefWidth="260.0" text="GENERATE" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="FILE_PDF" size="32" wrappingWidth="50.0" />
+               </graphic>
+            </JFXButton>
+            <Line endX="120.0" layoutX="130.0" layoutY="416.0" scaleY="0.2" scaleZ="0.0" startX="-120.0" stroke="WHITE" />
+            <JFXButton fx:id="settingButton" alignment="BASELINE_LEFT" layoutY="417.0" onAction="#showSetting" prefHeight="50.0" prefWidth="260.0" text="SETTINGS" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="SETTINGS" size="32" text="" wrappingWidth="50.0" />
+               </graphic>
+            </JFXButton>
+            <Line endX="120.0" layoutX="130.0" layoutY="467.0" scaleY="0.2" scaleZ="0.0" startX="-120.0" stroke="WHITE" />
+            <JFXButton fx:id="helpButton" alignment="BASELINE_LEFT" layoutY="468.0" onAction="#showHelp" prefHeight="50.0" prefWidth="260.0" text="HELP" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="HELP" size="32" wrappingWidth="50.0" />
+               </graphic>
+            </JFXButton>
+            <Line endX="120.0" layoutX="130.0" layoutY="518.0" scaleY="0.2" scaleZ="0.0" startX="-120.0" stroke="WHITE" />
+            <JFXButton fx:id="aboutButton" alignment="BASELINE_LEFT" layoutY="519.0" onAction="#showAbout" prefHeight="50.0" prefWidth="260.0" text="ABOUT" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="INFORMATION_OUTLINE" size="32" wrappingWidth="50.0" />
+               </graphic>
+            </JFXButton>
+            <Line endX="120.0" layoutX="130.0" layoutY="569.0" scaleY="0.2" scaleZ="0.0" startX="-120.0" stroke="WHITE" />
+            <Text fill="#7c7575" layoutX="57.0" layoutY="616.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Updated November 09 2017&#10;Version (9.0.3 beta)" />
+         </children>
+      </AnchorPane>
+    </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

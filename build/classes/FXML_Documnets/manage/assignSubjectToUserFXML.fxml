@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="590.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML_Controllers.manage.AssignSubjectToUserFXMLController">
+   <children>
+      <Text fill="#09097c" layoutX="26.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage -&gt; Assign Subject To Users" wrappingWidth="691.3333435058594">
+         <font>
+            <Font name="Yu Gothic Regular" size="40.0" />
+         </font>
+      </Text>
+      <Text fill="#15075b" layoutX="46.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QPDS ID : ">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Text>
+      <TextField fx:id="edQpdsId" layoutX="173.0" layoutY="189.0" onKeyReleased="#showQpdsIdInfo" prefHeight="46.0" prefWidth="184.0" promptText="ex. 0001">
+         <font>
+            <Font name="Footlight MT Light" size="25.0" />
+         </font>
+      </TextField>
+      <Text fill="#15075b" layoutX="499.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject Code : ">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Text>
+      <TextField fx:id="edSubjectCode" layoutX="671.0" layoutY="189.0" onKeyReleased="#showSubjectCodeInfo" prefHeight="46.0" prefWidth="224.0" promptText="ex. 15CS31">
+         <font>
+            <Font name="Footlight MT Light" size="25.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="buttonAssign" buttonType="RAISED" layoutX="720.0" layoutY="499.0" onAction="#assignMethod" prefHeight="39.0" prefWidth="172.0" style="-fx-background-color: #1c7886;" text="Assign" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <Text fx:id="errorText" fill="RED" layoutX="117.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="qpdsIdInfo" layoutX="50.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="subjectCodeInfo" layoutX="50.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
